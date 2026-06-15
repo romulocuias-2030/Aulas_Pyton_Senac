@@ -1,0 +1,78 @@
+""" def saudacao():
+    print("Olá galera")
+    print("Bora aprender a programar Pyton")
+saudacao()    
+
+def imprime_nome(nome):
+    print(f"Meu nome é: {nome}")
+    
+imprime_nome('João')
+
+def saudacao2(nome):
+    print(f"Olá: {nome}!")
+    print("Bora aprender a programar Pyton")
+saudacao2('Ana')  
+
+def imprimir_nome(nome="Não informado", idade = "Não informada"):
+    print(f'Nome do cliente: {nome}, Idade:{idade}') 
+    
+imprimir_nome('Romulo', 52)  
+imprimir_nome(30, 'Roberto')
+imprimir_nome(idade=52, nome='Romulo')   
+imprimir_nome('Romulo') 
+imprimir_nome()  """
+
+# Função listar alunos matriculados 
+alunos = ['Ana', 'João,', 'Maria', 'Pedro'] 
+
+""" def lista_alunos():
+    print('Lista de Alunos') 
+    for aluno in alunos:
+        print(f"Aluno(a):{aluno} está matriculado no curso de programação")
+lista_alunos()  
+
+def cadastrar_aluno():
+    nome=input('Digite o nome do aluno: ')
+    alunos.append(nome)      
+    print(f"Aluno(a):{nome} foi cadastrado com sucesso!")
+    
+cadastrar_aluno() 
+cadastrar_aluno()  
+lista_alunos()
+
+
+def excluir_nome():
+    nome =  input('Digite o nome do aluno para excluir: ')
+    if nome in alunos:
+        alunos.remove(nome)   
+        print(f"Aluno(a):{nome} foi excluído com sucesso!")
+    else:
+        print(f"Aluno(a):{nome} não foi encontrado na lista!")
+        
+excluir_nome()
+lista_alunos() """
+
+def soma(a,b):
+    resultado = a+b
+    return resultado
+
+total = soma(5,3)
+print(f'O resultado da soma é: {total}')
+
+def calcular_idade(ano_nas, ano_atual=2026):
+    idade = ano_atual - ano_nas #para varialvel idade, funcionar fora da função, use 'global idade'
+    return idade # para calculo sempre use o 'return'
+
+idade_ana = calcular_idade(1876)
+print(f'Ana tem {idade_ana} anos')
+idade_carlos = calcular_idade(1993, 2023)
+print(f'Carlos tem {idade_carlos} anos')
+
+def calcula_imc(peso, altura):
+    imc = peso / altura**2
+    return imc
+
+resultado = calcula_imc(peso=70,altura=1.75)
+print(f'O IMC é: {resultado:.2f}')
+
+         

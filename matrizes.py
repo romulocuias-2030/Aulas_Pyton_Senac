@@ -41,7 +41,7 @@ while True:
         print("Opção invalida.")  """  
         
   
-  
+
 produtos=[]        
 while True:
     print('\n-----Loja de eletronicos-----')
