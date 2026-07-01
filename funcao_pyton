@@ -23,7 +23,7 @@ imprimir_nome('Romulo')
 imprimir_nome()  """
 
 # Função listar alunos matriculados 
-alunos = ['Ana', 'João,', 'Maria', 'Pedro'] 
+# alunos = ['Ana', 'João,', 'Maria', 'Pedro'] 
 
 """ def lista_alunos():
     print('Lista de Alunos') 
@@ -88,7 +88,7 @@ print(f'O IMC é: {resultado:.2f}') """
 # maior_30(31,30,29,28,27)                    
 
 
-clientes = []
+""" clientes = []
 def mostrar_menu():
     print("\n--- Menu ---")
     print("1 - Cadastrar cliente")
@@ -96,6 +96,8 @@ def mostrar_menu():
     print("3 - Alterar cliente")
     print("4 - Excluir cliente")
     print("5 - Sair")
+    
+
 
 def cadastrar_cliente():
     nome = input("Nome do cliente: ")
@@ -106,6 +108,7 @@ def listar_clientes():
     print("\nClientes:")
     for cliente in clientes:
         print(cliente)
+        
 def alterar_cliente():
     nome = input("Nome a alterar: ")
     if nome in clientes:
@@ -115,6 +118,8 @@ def alterar_cliente():
         print("Cliente alterado!")
     else:
         print("Cliente não encontrado.")
+listar_clientes()
+
         
 def excluir_cliente():
     nome = input("Nome a excluir: ")
@@ -123,20 +128,78 @@ def excluir_cliente():
         print("Cliente excluído!")
     else:
         print("Cliente não encontrado.")
-        
+       
 while True:
     mostrar_menu()
     opcao = input("Escolha: ")
     if opcao == "1":
         cadastrar_cliente()
     elif opcao == "2":
-            listar_clientes()
+        listar_clientes()
     elif opcao == "3":
-            alterar_cliente()
+        alterar_cliente()
     elif opcao == "4":
-            excluir_cliente()
+        excluir_cliente()
     elif opcao == "5":
-            print("Saindo...")
-            break
+        print("Saindo...")
+        break
     else:
-            print("Opção inválida!")
+        print("Opção inválida!") """
+
+
+""" def imprime_nome():
+    nome = input("Digite o seu nome: ")  # Captura o nome digitado pelo usuário
+    print(f"Meu nome é: {nome}")        # Exibe o nome na tela
+    
+imprime_nome()                          # Chama a função corretamente """
+
+""" def soma(a,b):
+    resultado=a+b
+    print(f"O resultado da soma é: {resultado}")# nem sempre é o correto
+    # return resultado # o correto
+total=soma(5,3) 
+# print(f"O resultado da soma é: {total}")  """  
+
+""" def calcular_idade(ano_nascimento,ano_atual=2026):
+    idade=ano_atual-ano_nascimento
+    return idade
+
+idade_atual=calcular_idade(1990)
+print(idade_atual)
+idade_ana=calcular_idade(1998)
+print(f"Ana tem {idade_ana} anos.")
+idade_carlos=calcular_idade(1998,2002)
+print(f"Carlos tem {idade_carlos} anos.") """
+
+""" def calcular_imc(peso,altura):
+    imc = peso/altura**2
+    return imc
+resultado=calcular_imc(83, 1.60)
+print(f"O IMC é {resultado:.2f}") """
+
+""" def maior_30(*args):
+    '''Função que recebe um número varialvel de argumentos e imprime aqueles que são maiores que 30'''
+    print(args)
+    print(type(args))
+    for num in args:
+        if num > 30:
+            print(f"Número maior que 30: {num}")
+maior_30(10,25,32,45,28,60)
+print() 
+maior_30(15,22,29) 
+print()  
+maior_30(31,30,29,28,27)  """
+
+""" 
+def verificar_maioridade(idade):
+    if idade>=18:
+        return True
+    else: 
+        return False
+    
+idade=int(input("Sua idade: "))
+if verificar_maioridade(idade):
+    print("É de maior idade.") 
+else:
+    print("É de menor idade.")          
+                 """
